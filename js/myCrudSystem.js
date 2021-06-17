@@ -153,10 +153,10 @@ function checkInputs() {
 
 //-------------- Inputs Validations ---------------
 
-var regexProductName = /^[A-Z][a-z]{0,10}$/;
-var regexproductCategor = /^[A-Z][a-z]{0,10}$/;
-var regexproductPrice = /^[0-9]+$/;
-var regexproductDescription = /^[A-Z][a-z]{2,}$/;
+var regexProductName = /^[A-Za-z]{0,50}$/;
+var regexproductCategor = /^[A-Za-z]{0,50}$/;
+var regexproductPrice = /^[0-9]{0,10}$/;
+var regexproductDescription = /^[A-Za-z]{0,50}$/;
 
 function validateInputs() {
     if (regexProductName.test(productNameInput.value) == true && regexproductCategor.test(productCategoryInput.value) == true && regexproductPrice.test(productPriceInput.value) == true && regexproductDescription.test(productDescriptionInput.value) == true) {
